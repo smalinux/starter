@@ -1,0 +1,31 @@
+-- -- Git and Version Control
+return {
+-- SMA: maybe in future I will enable it, to see diffs in Vim
+--  { "sindrets/diffview.nvim" },
+--
+--     {
+--         'tpope/vim-fugitive',
+--         cmd = { 'Git', 'Gdiffsplit', 'Gread', 'Gwrite', 'Ggrep', 'GMove', 'GDelete', 'GBrowse', 'GRemove', 'GRename', 'Glgrep', 'Gedit' },
+--         keys = {
+--             { '<F9>', '<cmd>Git blame<cr>', desc = 'Git Blame' },
+--             { '<leader>gs', '<cmd>Git<cr>', desc = 'Git Status' },
+--             { '<leader>gc', '<cmd>Git commit<cr>', desc = 'Git Commit' },
+--             { '<leader>gp', '<cmd>Git push<cr>', desc = 'Git Push' },
+--             { '<leader>gl', '<cmd>Git log<cr>', desc = 'Git Log' },
+--             { '<leader>gd', '<cmd>Gdiffsplit<cr>', desc = 'Git Diff' },
+--         },
+--     },
+--
+--     -- Git signs (in ui.lua but also related to git)
+--     -- Already included in ui.lua
+--
+--     -- Git diff view
+--     {
+--         'sindrets/diffview.nvim',
+--         cmd = { 'DiffviewOpen', 'DiffviewClose', 'DiffviewToggleFiles', 'DiffviewFocusFiles' },
+--         keys = {
+--             { '<leader>dv', '<cmd>DiffviewOpen<cr>', desc = 'Open Diffview' },
+--             { '<leader>dc', '<cmd>DiffviewClose<cr>', desc = 'Close Diffview' },
+--         },
+--     },
+}
