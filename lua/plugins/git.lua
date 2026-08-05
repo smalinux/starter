@@ -3,7 +3,9 @@
 -- Gitsigns Keybindings Cheatsheet:
 --   <leader>gb     : Blame line (full)
 --   <leader>gp     : Preview hunk (floating popup)
---   <leader>gx     : Toggle deleted hunks
+--   <leader>gt     : Toggle deleted hunks
+--
+--   <leader>gx     : Toggle inline diff globally via diff-so-fancy (plugins/diff-so-fancy.lua)
 --
 --   ]h / [h        : Next / Prev hunk
 --   ]H / [H        : Last / First hunk
@@ -99,8 +101,8 @@ return {
           gs.blame_line({ full = true })
         end, "Blame Line")
 
-        -- Toggle signs
-        map("n", "<leader>gx", gs.toggle_deleted, "Toggle Deleted")
+        -- Toggle signs (<leader>gx is taken by fancy-diff / diff-so-fancy)
+        map("n", "<leader>gt", gs.toggle_deleted, "Toggle Deleted")
 
         -- Text object — select the hunk as a motion target
         map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>", "Select Hunk")
